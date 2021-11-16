@@ -57,7 +57,9 @@ def register_user(request):
     # Now save the extra info in the levelupapi_gamer table
     rare_user = RareUser.objects.create(
         bio=request.data['bio'],
-        user=new_user
+        user=new_user,
+        created_on = request.data['created_on'],
+        active = request.data['active']
     )
 
     # Use the REST Framework's token generator on the new user account
