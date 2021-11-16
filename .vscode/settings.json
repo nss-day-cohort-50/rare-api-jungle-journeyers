@@ -5,5 +5,13 @@
         "--load-plugins=pylint_django",
         "--django-settings-module=api.settings",
     ],
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "Rare API DB",
+            "database": "db.sqlite3"
+        }
+    ],
     
 }

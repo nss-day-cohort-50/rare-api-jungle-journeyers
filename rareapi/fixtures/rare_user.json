@@ -1,0 +1,13 @@
+[
+    {
+        "model": "rareapi.rareuser",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "bio": "Me",
+            "created_on":"2021-11-29",
+            "active": false
+
+        }
+    }
+]

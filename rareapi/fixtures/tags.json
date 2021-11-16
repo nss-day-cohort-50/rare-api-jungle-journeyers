@@ -1,0 +1,10 @@
+[
+    {
+        "model":"rareapi.tags",
+        "pk":1,
+        "fields": {
+            "label": "News",
+            "posts": []
+        }
+    }
+]

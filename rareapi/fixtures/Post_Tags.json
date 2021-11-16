@@ -1,0 +1,11 @@
+[
+    {
+        "model": "rareapi.PostTags",
+        "pk":1,
+        "fields":{
+            "tag":1,
+            "post":1
+            
+        }
+    }
+]
