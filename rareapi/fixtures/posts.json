@@ -1,0 +1,38 @@
+[
+    {
+        "model":"rareapi.posts",
+        "pk": 1,
+        "fields":{
+            "user": 1,
+            "category": 1,
+            "title": "test",
+            "publication_date": "2021-09-29",
+            "content": " this is a test",
+            "approved": false
+        }
+    },
+    {
+        "model":"rareapi.posts",
+        "pk": 2,
+        "fields":{
+            "user": 1,
+            "category": 1,
+            "title": "test 2",
+            "publication_date": "2021-09-29",
+            "content": " this is a test",
+            "approved": false
+        }
+    },
+    {
+        "model":"rareapi.posts",
+        "pk": 3,
+        "fields":{
+            "user": 1,
+            "category": 1,
+            "title": "test 3",
+            "publication_date": "2021-09-29",
+            "content": " this is a test",
+            "approved": false
+        }
+    }
+]
