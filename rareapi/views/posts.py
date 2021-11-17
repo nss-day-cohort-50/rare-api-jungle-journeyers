@@ -51,10 +51,14 @@ class RareUserSerializer(serializers.ModelSerializer):
     user = UserSerializer()
     class Meta:
         model = RareUser
-        fields = ('user', 'bio')
+        fields = ('user', )
+  
 
 class PostSerializer(serializers.ModelSerializer):
-    user = RareUserSerializer
+    user = RareUserSerializer()
     class Meta:
         model = Posts
         fields = ('id', 'user', 'category', 'title', 'publication_date', 'content', 'approved')
+        depth = 1
+        
+        
