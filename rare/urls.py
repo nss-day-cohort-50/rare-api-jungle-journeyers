@@ -17,8 +17,7 @@ from django.contrib import admin
 from django.conf.urls import include
 from django.urls import path
 from rest_framework import routers
-from rareapi.views import TagsView
-from rareapi.views import PostView
+from rareapi.views import TagsView, PostView
 
 from rareapi.views.auth import login_user, register_user
 
