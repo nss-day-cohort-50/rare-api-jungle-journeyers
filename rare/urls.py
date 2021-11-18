@@ -16,13 +16,17 @@ Including another URLconf
 from django.contrib import admin
 from django.conf.urls import include
 from django.urls import path
+from rest_framework import routers
+from rareapi.views import TagsView, PostView, CommentView
+
 from rareapi.views.auth import login_user, register_user
 from django.conf.urls import include
 from rest_framework import routers
-from rareapi.views import CommentView, PostView
+
 
 
 router = routers.DefaultRouter(trailing_slash=False)
+router.register(r'tags', TagsView, 'tag')
 router.register(r'comments', CommentView, 'comment')
 router.register(r'mypost', PostView, 'posts')
 
